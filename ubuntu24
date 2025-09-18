@@ -1,10 +1,13 @@
 sudo apt update && sudo apt upgrade -y
-$ wget https://www.manageengine.com/network-monitoring/29809517/ManageEngine_OpManager_64bit.bin
-$ sudo chmod u+x ManageEngine_OpManager_64bit.bin
-$ sudo ./ManageEngine_OpManager_64bit.bin
+wget https://www.manageengine.com/network-monitoring/29809517/ManageEngine_OpManager_64bit.bin
+sudo chmod u+x ManageEngine_OpManager_64bit.bin
+sudo ./ManageEngine_OpManager_64bit.bin
 
-$ cd /opt/ManageEngine/OpManager/bin
-$ sudo ./StartOpManagerServer.sh
+cd /opt/ManageEngine/OpManager/bin
+sudo ./StartOpManagerServer.sh
+
+# first web https://<ip opmanager>:8061
+# change password
 
 $ cd /opt/ManageEngine/OpManager/bin
 $ sudo ./ShutDownOpManager.sh
