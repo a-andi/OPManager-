@@ -1,0 +1,18 @@
+sudo apt update && sudo apt upgrade -y
+$ wget https://www.manageengine.com/network-monitoring/29809517/ManageEngine_OpManager_64bit.bin
+$ sudo chmod u+x ManageEngine_OpManager_64bit.bin
+$ sudo ./ManageEngine_OpManager_64bit.bin
+
+$ cd /opt/ManageEngine/OpManager/bin
+$ sudo ./StartOpManagerServer.sh
+
+$ cd /opt/ManageEngine/OpManager/bin
+$ sudo ./ShutDownOpManager.sh
+
+# opne with browser
+$ cd /opt/ManageEngine/OpManager/bin
+$ sudo ./linkAsService.sh
+
+$ sudo systemctl start OpManager.service
+$ sudo systemctl stop OpManager.service
+$ sudo systemctl status OpManager.service
